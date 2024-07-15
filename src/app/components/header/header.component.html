@@ -1,0 +1,23 @@
+<header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Sobre Nosotros</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <h1>LOGIPANAMÁ</h1>
+    </div>
+    <div class="botones-accion">
+      <a (click)="toggleLoginCard()" class="botonBonito">Iniciar Sesión</a>
+      <a (click)="toggleRegisterCard()" class="botonBonito">Registrarse</a>
+    </div>
+  </header>
+  <div class="overlay" *ngIf="showLoginCard" >
+    <app-login-card (keydown.escape)="closeLoginCard()" ></app-login-card>
+  </div>
+  <div class="overlay" *ngIf="showRegisterCard" >
+    <app-register-card (keydown.escape)="closeRegisterCard()"></app-register-card>
+  </div>

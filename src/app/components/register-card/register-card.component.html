@@ -1,0 +1,11 @@
+<div class="login-card">
+  <h2>Ingresa tus datos {{ tableName }}</h2>
+  <form (ngSubmit)="insertData()">
+    <div *ngFor="let key of objectKeys(guardaGoles)">
+      <label>{{ key }}</label>
+      <input [(ngModel)]="guardaGoles[key]" name="{{ key }}" [ngModelOptions]="{standalone: true}" />
+    </div>
+    <button type="submit">Registrarte</button>
+  </form>
+</div>
+<app-notification #notification></app-notification>

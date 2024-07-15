@@ -1,0 +1,121 @@
+/*pie de página*/
+.footer {
+    background-color: #fdfdfd;
+    color: #182b3f;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+.layer1{
+    background-image: url('/fondo.jpg');
+    margin: 0;
+    height: 690px;
+}
+/*Título*/
+h2{
+    color: #fdfdfd;
+    display: flex;
+    justify-content: left;
+    flex: 1;
+    padding-right: 14%;
+    padding-left: 14%;
+    margin: 0;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+h1{
+    color: #182b3f;
+}
+/*Contenido*/
+.content{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    margin: 0;
+    display: grid;
+    align-items:center;
+    grid-template-columns: 1.45fr 0.55fr;
+    gap: 20px;
+    padding-top: 0;
+    padding-right: 12%;
+    padding-left: 12%;
+}
+.botonBonito {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fdfdfd;
+    background-color: #182b3f;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.botonBonito:hover {
+    background-color: #25476b;
+}
+.resumeText {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 4%;
+    padding-right: 20%;
+    color:#fdfdfd;
+}
+.Seguimiento{
+    color: #182b3f;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fdfdfd;
+    padding: 30px;
+    margin: 0;
+    border-radius: 16px;
+}
+.alterLayer{
+    color: #182b3f;
+    font-size: 30px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.alterP{
+    color: #182b3f;
+    display: flex;
+    justify-content: left;
+    flex: 1;
+    padding-right: 28%;
+    padding-left: 14%;
+    margin: 0;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+}
+h3{
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+}
+/* Login */
+app-login-card {
+    z-index: 10;
+}
+app-register-card {
+    z-index: 10;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

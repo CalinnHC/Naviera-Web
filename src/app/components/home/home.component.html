@@ -1,0 +1,23 @@
+<div class="layer1">
+  <h2>Transporte de alta calidad</h2>
+  <div class="content">
+    <div class="resumeText">
+      <p>Encargados de proveer servicios de transporte de mercancías de alta calidad, garantizando la seguridad y
+        puntualidad en cada entrega.</p>
+        <a (click)="toggleRegisterCard()" class="botonBonito">Registrate Ahora</a>
+    </div>
+    <div class="Seguimiento">
+      <h3>Rastrear Mercancía</h3>
+      <input type="text" placeholder="Ingresa el ID de rastreo...">
+      <button class="botonBonito">Buscar</button>
+    </div>
+  </div>
+</div>
+<div class="layer2">
+  <h2 class="alterLayer">Nuestras Soluciones de Transporte de Mercancías</h2>
+  <p class="alterP">Encargados de proveer servicios de transporte de mercancías de alta calidad, garantizando la
+    seguridad y puntualidad en cada entrega.</p>
+</div>
+<div class="overlay" *ngIf="showRegisterCard" >
+  <app-register-card (keydown.escape)="closeRegisterCard()"></app-register-card>
+</div>

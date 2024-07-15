@@ -1,0 +1,17 @@
+
+/*pie de página*/
+.footer {
+    background-color: #fdfdfd;
+    color: #182b3f;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.layer1 {
+    background-image: url('/fondo.jpg');
+    margin: 0;
+    height: 690px;
+}

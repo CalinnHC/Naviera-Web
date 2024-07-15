@@ -1,0 +1,118 @@
+/*encabezado*/
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fdfdfd;
+    margin: 0%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.logo img {
+    height: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.botones-accion {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    gap: 3%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #182b3f;
+    font-weight: bold;
+}
+
+.barra-busqueda button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #bb412f;
+    color: white;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+
+/*Título*/
+h2 {
+    color: #fdfdfd;
+    display: flex;
+    justify-content: left;
+    flex: 1;
+    padding-right: 14%;
+    padding-left: 14%;
+    margin: 0;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+
+h1 {
+    color: #182b3f;
+}
+
+.botonBonito {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fdfdfd;
+    background-color: #182b3f;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.botonBonito:hover {
+    background-color: #25476b;
+}
+
+/* Login */
+app-login-card {
+    z-index: 10;
+}
+app-register-card {
+    z-index: 10;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,8 @@
+<div *ngIf="usuarios">
+    <h2>Tablas del usuario</h2>
+    <ul>
+      <li *ngFor="let tabla of usuarios">
+        El Usuario: {{ tabla[1] }} vive en: {{ tabla[2] }}
+      </li>
+    </ul>
+  </div>
