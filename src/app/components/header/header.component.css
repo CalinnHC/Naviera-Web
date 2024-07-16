@@ -116,3 +116,6 @@ app-register-card {
     justify-content: center;
     align-items: center;
 }
+a {
+    text-decoration: none;
+}

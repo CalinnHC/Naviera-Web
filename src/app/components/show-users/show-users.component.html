@@ -1,8 +1,14 @@
-<div *ngIf="usuarios">
-    <h2>Tablas del usuario</h2>
-    <ul>
-      <li *ngFor="let tabla of usuarios">
-        El Usuario: {{ tabla[1] }} vive en: {{ tabla[2] }}
-      </li>
-    </ul>
-  </div>
+<div *ngIf="usuarios" class="user-table-container">
+  <h2>Tablas del usuario</h2>
+  <ul class="user-table-list">
+    <li *ngFor="let tabla of usuarios" class="user-table-item">
+      <div class="user-table-details">
+        <p><strong>ID de Usuario:</strong> {{ tabla[0] }}</p>
+        <p><strong>Usuario:</strong> {{ tabla[1] }}</p>
+        <p><strong>Ubicación:</strong> {{ tabla[2] }}</p>
+        <p><strong>Teléfono:</strong> {{ tabla[3] }}</p>
+        <p><strong>Correo Electrónico:</strong> {{ tabla[4] }}</p>
+      </div>
+    </li>
+  </ul>
+</div>

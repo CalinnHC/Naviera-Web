@@ -13,6 +13,17 @@
     margin: 0;
     height: 690px;
 }
+.layer2{
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.layer3{
+    background-color: #c4d0db;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
 /*Título*/
 h2{
     color: #fdfdfd;
@@ -58,6 +69,24 @@ h1{
     cursor: pointer;
 }
 .botonBonito:hover {
+    background-color: #25476b;
+}
+.botonBonito2 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fdfdfd;
+    background-color: #da6b6b;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.botonBonito2:hover {
     background-color: #25476b;
 }
 .resumeText {
@@ -118,4 +147,37 @@ app-register-card {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.botonBonito {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fdfdfd;
+    background-color: #182b3f;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.usuario{
+    margin-left: 14%;
+    
+}
+h4{
+    color: #fdfdfd;
+    display: flex;
+    justify-content: left;
+    flex: 1;
+    margin: 0;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+a{
+   
 }

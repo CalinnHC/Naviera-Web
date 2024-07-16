@@ -9,7 +9,7 @@ export class NotificationComponent {
   visible: boolean = false;
   message: string = '';
 
-  showNotification(message: string, duration: number = 3000): void {
+  showNotification(message: string, duration: number = 5000): void {
     this.message = message;
     this.visible = true;
 

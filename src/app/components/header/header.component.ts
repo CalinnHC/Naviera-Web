@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -19,5 +20,5 @@ export class HeaderComponent {
   }
   closeRegisterCard() {
     this.showRegisterCard = false;
-  }
+  } 
 }

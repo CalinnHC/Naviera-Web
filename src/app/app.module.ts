@@ -13,6 +13,8 @@ import { NotificationComponent } from './components/notification/notification.co
 import { HeaderComponent } from './components/header/header.component';
 import { ShowUsersComponent } from './components/show-users/show-users.component';
 import { ShowUserComponent } from './components/show-user/show-user.component';
+import { NewPassComponent } from './components/new-pass/new-pass.component';
+import { DeleteAccountComponent } from './components/delete-account/delete-account.component';
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import { ShowUserComponent } from './components/show-user/show-user.component';
     HeaderComponent,
     ShowUsersComponent,
     ShowUserComponent,
+    NewPassComponent,
+    DeleteAccountComponent,
   ],
   imports: [
     BrowserModule,

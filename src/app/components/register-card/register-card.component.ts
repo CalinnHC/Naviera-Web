@@ -14,7 +14,7 @@ export class RegisterCardComponent {
   objectKeys = Object.keys;
 
   guardaGoles: any = {
-    Cedula: 10,
+    Cedula: 1,
     Nombre_Completo: 'Erick Lopez',
     Direccion: 'Panamá',
     Telefono: 60000000,

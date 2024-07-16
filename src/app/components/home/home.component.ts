@@ -13,4 +13,5 @@ export class HomeComponent {
   closeRegisterCard() {
     this.showRegisterCard = false;
   }
+  
 }

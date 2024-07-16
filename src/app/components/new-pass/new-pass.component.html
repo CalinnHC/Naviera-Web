@@ -1,0 +1,12 @@
+<div>
+  <h2>Cambio de Contraseña</h2>
+  <form (ngSubmit)="cambiarContrasena()">
+    <label for="cedula">Cédula:</label>
+    <input type="text" id="cedula" name="cedula" required [(ngModel)]="cedula">
+  
+    <label for="password">Nueva Contraseña:</label>
+    <input type="password" id="password" name="password" required [(ngModel)]="nuevaContrasena">
+  
+    <button type="submit">Cambiar</button>
+  </form>
+</div>

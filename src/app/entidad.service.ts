@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient,HttpHeaders  } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
@@ -25,5 +25,19 @@ export class EntidadService {
   logUser(email: string, password: string): Observable<any> {
     const body = { email, password };
     return this.http.post(`${this.apiUrl}/logUser`, body);
+  }
+  cambiarContrasena(idUsuario: number, nuevaContrasena: string): Observable<any> {
+    const body = {
+      id_usuario: idUsuario,
+      nueva_contrasena: nuevaContrasena
+    };
+    return this.http.post(`${this.apiUrl}/cambiarContrasena`, body);
+  }
+  eliminarUsuario(idUsuario: number, nuevaContrasena: string): Observable<any> {
+    const body = {
+      id_usuario: idUsuario,
+      nueva_contrasena: nuevaContrasena
+    };
+    return this.http.post(`${this.apiUrl}/eliminarUsuario`, body);
   }
 }
